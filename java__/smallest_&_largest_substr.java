@@ -16,6 +16,27 @@ public class Solution {
         
         for(int i=1;i<=s.length()-k;i++){
             String substr = s.substring(i,i+k);
+
+            // CHARACTER BY CHARACTER COMPARISON
+            
+           //  for(int j=0; j<substr.length(); j++){
+           //      if(substr.charAt(j) < smallest.charAt(j)){
+           //          smallest = substr;
+           //          break;
+           //      }
+           //      else if(substr.charAt(j) > smallest.charAt(j)){    
+           //          break;
+           //      }
+           // }
+           // for(int j=0; j<substr.length(); j++){
+           //      if(substr.charAt(j) > largest.charAt(j)){
+           //          largest = substr;
+           //          break;
+           //      }
+           //      else if(substr.charAt(j) < largest.charAt(j)){
+           //          break;
+           //      }
+           //  }
             if(substr.compareTo(smallest)<0)
                 smallest =substr;
             else if(substr.compareTo(largest)>0)
